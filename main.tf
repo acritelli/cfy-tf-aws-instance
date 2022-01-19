@@ -6,7 +6,7 @@ module "network" {
 
 module "instance" {
     source = "./instance"
-    count  = 3
+    count  = 2
 
     app_name       = var.app_name
     instance_name  = "${var.app_name}-${count.index + 1}"
